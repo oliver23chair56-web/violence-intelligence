@@ -43,11 +43,14 @@ actions resulting in violence.
   once the first verified national series lands.
 
 ### Phase 3 — Incident-level circumstances (the core database)
-- Ingest incident-level circumstance data: Illinois State Police SHR table
-  (74,884 records) first, then NIBRS extracts — each row keeps its source
-  circumstance code, verbatim, plus a mapped motive *signal* (never a label).
-- Reconcile the open denominators (24,871 vs 53,239 vs 8,479) against the
-  source tables before publishing any share computed on them.
+- Illinois 2018 is an aggregate benchmark, NOT an incident-level source
+  (verified 2026-11-08 vs the ISP PDF: 845 incidents, 894 victims, 874
+  murder victims; the 74,884-record figure cited earlier does not exist in
+  any verified source and is retired). Incident-level circumstance data
+  comes next from NIBRS extracts — each row keeps its source circumstance
+  code, verbatim, plus a mapped motive *signal* (never a label).
+- Verify the FBI SHR file record counts against the FBI publication before
+  publishing any share computed on them.
 - Escalation-pathway coding: reviewed cases get a coded pathway
   (trigger type, misunderstanding type, escalation steps, turning points).
   Published only in aggregate (e.g. "of N reviewed pathways, X% involved a

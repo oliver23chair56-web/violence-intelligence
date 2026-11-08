@@ -40,7 +40,7 @@ pathways = '''<div class="panel" style="margin-top:13px"><h2>How arguments escal
 <tr><td><code>escalation_pathways</code></td><td>Stage reached, trigger, misunderstandings, mechanisms, exits, retaliation links</td><td>Schema designed</td></tr>
 <tr><td><code>circumstance_sources</code></td><td>Registry of every source table, with coverage and retrieval date</td><td>Schema designed</td></tr>
 </tbody></table>
-<p class="method"><strong>Status today:</strong> schema designed (migration 0002 in the repository); 0 incidents coded; seed aggregates (Illinois 2018, FBI 2018) already live in the benchmarks. Next: apply the migration to the live database, ingest the Illinois state-submitted table (74,884 records) as the first incident-level source, and reconcile its denominators before publishing any share computed on them.</p></div>
+<p class="method"><strong>Status today:</strong> schema designed (migration 0002 in the repository); 0 incidents coded; seed aggregates (Illinois 2018, FBI 2018) already live in the benchmarks. Next: migration 0003 compatibility work (VIRS) and the public VIRS data portal. The Illinois 2018 source is an aggregate benchmark (874 murder victims, verified vs the ISP PDF), not an incident-level feed.</p></div>
 '''
 sub('<div class="panel" style="margin-top:13px"><h2>Methods &amp; coverage</h2>',
     pathways + '<div class="panel" style="margin-top:13px"><h2>Methods &amp; coverage</h2>')
