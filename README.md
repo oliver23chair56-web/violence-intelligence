@@ -2,6 +2,9 @@
 
 Public research / prevention-intelligence dashboard about gun violence,
 Chicago pilot. Live: https://violence-intelligence.vercel.app
+Repo: https://github.com/oliver23chair56-web/violence-intelligence
+
+Deploys automatically from the main branch via Vercel.
 
 ## What this is
 A static site (no build step) that reads live aggregates from the Supabase
