@@ -23,7 +23,7 @@ source field means what the rule says it means. Until then it is
 
 | City | Gunshot victimizations | Firearm homicide victims | Distinct firearm-discharge events |
 |---|---|---|---|
-| **Chicago** | SUPPORTED — `gunshot_injury = YES`, victim rows (15,330 gunshot victimizations, 2020 + 2022–2025; 2021 missing) | SUPPORTED — `gunshot_injury = YES AND victimization_primary = HOMICIDE` (2,778 fatal gunshot victimizations) | NOT SUPPORTED — case numbers are not events. 12,293 cases vs 12,637 distinct case numbers in the victim feed (344-case gap, under investigation). The 500 pilot groupings are provisional, unreviewed. |
+| **Chicago** | SUPPORTED — `gunshot_injury = YES`, victim rows (15,330 gunshot victimizations, 2020 + 2022–2025; 2021 missing) | SUPPORTED — `gunshot_injury = YES AND victimization_primary = HOMICIDE` (2,778 fatal gunshot victimizations) | NOT SUPPORTED — case numbers are not events. The 344-case gap is SOLVED (2026-11-08): the catalog's 12,293 cases are exactly the gunshot cases; the 344 are homicide cases with no gunshot victimization row (354 rows, 10 cases with 2 rows). The 500 pilot groupings remain provisional and unreviewed. |
 | **Baltimore** | NOT SUPPORTED — source is offense rows, not victims. `Shooting = Y` flags an offense, and multiple offense rows can share one case ID. | NOT SUPPORTED — no victim-level homicide flag in the mapping. Deriving it from offense rows would be a guess. | NOT SUPPORTED — distinct CCNumber among Shooting=Y rows counts cases associated with shooting-coded offenses, not distinct gunfire events. |
 | **Kansas City** | NOT SUPPORTED — `firearmusedflag = true` on selected offenses proves a firearm was involved, not that it was discharged, and not that anyone was shot. Multiple rows per report. | NOT SUPPORTED — same reason; no victim grain. | NOT SUPPORTED — distinct report numbers among firearm-used offenses are not shooting counts. |
 | **Detroit** | NOT SUPPORTED — "selected violent offense" (four categories) includes offense entries with no known firearm involvement. | NOT SUPPORTED — same reason. | NOT SUPPORTED — distinct report_number within selected offenses is not a shooting count. |
@@ -55,7 +55,7 @@ Baltimore**. To get there:
    measure how often one Baltimore case ID hides multiple offense rows.
    Design doc pending; review needs Oliver (gate) + one independent
    second reviewer (not yet named).
-2. Resolve the **344-case gap** (Chicago) — what the 344 case numbers are.
+2. Resolve the **344-case gap** (Chicago) — SOLVED 2026-11-08 ~02:43 CST: the catalog's 12,293 cases are exactly the gunshot cases; the 344 are homicide cases with no gunshot victimization row (354 rows, all HOMICIDE, 10 cases with 2 rows; years 2020: 75, 2022: 70, 2023: 60, 2024: 69, 2025: 70). gunshot_injury is clean: YES 15,330 / NO 363 / NULL 0; 9 NO rows sit on mixed cases that also have a gunshot victim.
 3. Then, and only then, flip Baltimore's firearm-homicide mapping to
    approved — or document why it cannot be approved and what source would
    be needed instead.
