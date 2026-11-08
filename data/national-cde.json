@@ -1,0 +1,146 @@
+{
+ "source": "FBI Crime Data Explorer API (api.usa.gov/crime/fbi/cde)",
+ "retrieved": "2026-11-08",
+ "coverage_note": "Reported counts from participating agencies (summarized data). Not FBI estimates. 2021 coverage was only 74-80% of the US population during the NIBRS transition, so the 2021 total is understated; do not read it as a decline.",
+ "annual_homicide": [
+  {
+   "year": 2015,
+   "homicides": 15643,
+   "months": 12,
+   "avg_monthly_rate_per_100k": 0.42,
+   "min_coverage_pct": 97.0,
+   "max_coverage_pct": 98.0
+  },
+  {
+   "year": 2016,
+   "homicides": 17123,
+   "months": 12,
+   "avg_monthly_rate_per_100k": 0.45,
+   "min_coverage_pct": 97.5,
+   "max_coverage_pct": 98.0
+  },
+  {
+   "year": 2017,
+   "homicides": 16983,
+   "months": 12,
+   "avg_monthly_rate_per_100k": 0.45,
+   "min_coverage_pct": 95.9,
+   "max_coverage_pct": 96.9
+  },
+  {
+   "year": 2018,
+   "homicides": 16862,
+   "months": 12,
+   "avg_monthly_rate_per_100k": 0.44,
+   "min_coverage_pct": 97.2,
+   "max_coverage_pct": 97.9
+  },
+  {
+   "year": 2019,
+   "homicides": 16709,
+   "months": 12,
+   "avg_monthly_rate_per_100k": 0.44,
+   "min_coverage_pct": 94.8,
+   "max_coverage_pct": 97.0
+  },
+  {
+   "year": 2020,
+   "homicides": 21591,
+   "months": 12,
+   "avg_monthly_rate_per_100k": 0.56,
+   "min_coverage_pct": 95.2,
+   "max_coverage_pct": 96.7
+  },
+  {
+   "year": 2021,
+   "homicides": 17932,
+   "months": 12,
+   "avg_monthly_rate_per_100k": 0.58,
+   "min_coverage_pct": 74.1,
+   "max_coverage_pct": 79.5
+  },
+  {
+   "year": 2022,
+   "homicides": 21884,
+   "months": 12,
+   "avg_monthly_rate_per_100k": 0.57,
+   "min_coverage_pct": 93.7,
+   "max_coverage_pct": 95.4
+  },
+  {
+   "year": 2023,
+   "homicides": 19795,
+   "months": 12,
+   "avg_monthly_rate_per_100k": 0.51,
+   "min_coverage_pct": 95,
+   "max_coverage_pct": 96.4
+  },
+  {
+   "year": 2024,
+   "homicides": 17277,
+   "months": 12,
+   "avg_monthly_rate_per_100k": 0.44,
+   "min_coverage_pct": 96.1,
+   "max_coverage_pct": 96.7
+  }
+ ],
+ "shr_national_2015_2024": {
+  "total_victims": 165675,
+  "undetermined_circumstances": 72816,
+  "groups": [
+   {
+    "group": "Circumstances undetermined",
+    "count": 72816,
+    "share_of_all_pct": 44.0,
+    "share_of_known_pct": null,
+    "note": "Facts provided do not permit determination of circumstances"
+   },
+   {
+    "group": "Expressive-leaning (arguments, domestic, brawls)",
+    "count": 42842,
+    "share_of_all_pct": 25.8,
+    "share_of_known_pct": 46.1,
+    "note": "Other Arguments 40,095; Argument of Money or Property 1,151; Domestic Violence 732; Brawl (alcohol) 474; Brawl (narcotics) 390"
+   },
+   {
+    "group": "Instrumental-leaning (felony-type)",
+    "count": 14269,
+    "share_of_all_pct": 8.6,
+    "share_of_known_pct": 15.4,
+    "note": "Narcotic Drug Laws 5,445; Robbery 5,002; Burglary 921; All Suspected Felony Type 874; Arson 742; Motor Vehicle Theft 574; Larceny 364; Rape 159; Other Sex Offenses 66; Prostitution 79; Gambling 43"
+   },
+   {
+    "group": "Gang",
+    "count": 6144,
+    "share_of_all_pct": 3.7,
+    "share_of_known_pct": 6.6,
+    "note": "Gangland Killings 3,266; Juvenile Gang Killings 2,878"
+   },
+   {
+    "group": "Other / not specified",
+    "count": 28832,
+    "share_of_all_pct": 17.4,
+    "share_of_known_pct": 31.1,
+    "note": "Other 23,413; Other - not specified 5,419"
+   },
+   {
+    "group": "Other small categories",
+    "count": 772,
+    "share_of_all_pct": 0.5,
+    "share_of_known_pct": 0.8,
+    "note": "Institutional Killings 538; Child Killed by Babysitter 210; Sniper Attack 18; Abortion 4; Human Trafficking 2"
+   }
+  ],
+  "known_total": 92859
+ },
+ "weapons_2015_2024": {
+  "total": 165675,
+  "firearm": 121569,
+  "firearm_share_pct": 73.4,
+  "note": "Handgun 71,343; Firearm (type not specified) 41,681; Rifle 4,086; Shotgun 2,129; Other Firearm 2,330",
+  "knife": 15924,
+  "personal_weapons": 6994,
+  "blunt_object": 4060,
+  "other": 17128
+ }
+}
